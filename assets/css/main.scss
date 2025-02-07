@@ -22,8 +22,8 @@ $phone-width: 480px;
 }
 
 .flex-item1 {
-  padding: 5px;
-  width: 11%;
+  padding: 5px 5px 5px 0;
+  width: 10%;
   img{ 
   border: 2px solid $navy;}
 }
@@ -114,8 +114,8 @@ firstp {
 #homeid img { margin: 0 0 0 0; border-radius:5%;}
 #picid img { margin: 6px 3px 60px 6px; border-radius:1%;  }
 #gridid .row { margin-bottom: 24px; }
-#gridid .rowl1 { margin-bottom: 24px; background-color: #f9f9f9; border-radius:10px; padding-left: 10px; padding-right: 10px;}
-#gridid .rowl2 { margin-bottom: 24px; background-color: #f9f9f9; border-radius:10px; padding-left: 10px; padding-right: 10px;}
+#gridid .rowl1 { margin-bottom: 24px; background-color: #white; border-radius:10px; padding-left: 10px; padding-right: 10px;}
+#gridid .rowl2 { margin-bottom: 24px; background-color: #white; border-radius:10px; padding-left: 10px; padding-right: 10px;}
 
 /* Grid overrides */
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,
@@ -151,7 +151,7 @@ firstp {
   margin-right: 5px;
   border-radius: 5px;
   margin-left: -12px;
-  background-color: #f9f9f9;
+  background-color: #white;
 }
 
 #gridid .rowl1 ol {
@@ -215,7 +215,7 @@ h4 {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: $navy;
+    color: black;
     font-size: large;
     // padding: 20px 40px 25px 0 ;
     text-decoration: none;
@@ -230,7 +230,7 @@ h4 {
 }
 
 .navbar-default .navbar-brand {
-    color: #3a3a3a;
+  color: black;
 }
 
 a:hover {
@@ -247,7 +247,7 @@ a:hover {
 
 .navbar-default .navbar-header .navbar-brand:hover {
     color: #091F92;
-    background-color: #f9f9f9;
+    background-color: #white;
     text-decoration: none;
     outline: 0;
 }

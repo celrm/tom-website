@@ -13,7 +13,7 @@ I am a PhD candidate at [CISPA Helmholtz Center for Information Security](https:
 <br>
 <div class="well" style="padding: 0px">
 #### Updates
-  <div style="display: block; border-top: 2px solid #3a3a3a; padding: 10px">
+  <div style="display: block; padding: 10px">
 <!-- how many future events to render -->
 {% assign render_limit = 5 %}
 <!-- counter of rendered events -->
@@ -24,15 +24,14 @@ I am a PhD candidate at [CISPA Helmholtz Center for Information Security](https:
 {% if rendered == render_limit %}
 {% break %}
 {% endif %}
-<strong>{{ event.date | date: "%-d.%m.%y" }}</strong>
-<p>{{ event.description }}</p>
+* <strong>{{ event.date | date: "%-d.%m.%y" }} ⋙</strong> {{ event.description }}
 <!-- increase counter of rendered events -->
 {% assign rendered = rendered | plus:1 %}
 {% if forloop.last == false %}
-<hr style="margin: 10px -10px;">
+<!-- <hr style="margin: 10px -10px;"> -->
 {% endif %}
 {% endfor %}
-  </div>
+</div>
 </div>
 {% endif %}
 
