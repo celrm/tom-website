@@ -105,9 +105,10 @@ permalink: /publications/
   {% if publi.pdf %}<a href="{{ publi.pdf }}" target="_blank">{% endif %} <strong>{{ publi.title }}</strong>{% if publi.pdf %}</a>{% endif %}<br />
   {{ publi.authors }}<br />
   <em>{{ publi.venue }}</em>{% if publi.year %} ({{publi.year}}){% endif %}<br/>
-  {% if publi.abstract %} <a data-bs-toggle="collapse" href="#abstract-{{forloop.index}}"  class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="abstract-{{forloop.index}}">ABSTRACT</a> {% endif %}
-  {% if publi.bib %} <a data-bs-toggle="collapse" href="#bib-{{forloop.index}}"  class="btn-bib" style="text-decoration:none; color:#ebebeb; hover:#ebebeb;" role="button" aria-expanded="false" aria-controls="bib-{{forloop.index}}">BIB</a> {% endif %}
-  {% if publi.pdf %}<a href="{{ pdffile }}" target="_blank"><button class="btn-pdf">PDF</button></a>{% endif %}
+  {% if publi.abstract %} <a data-bs-toggle="collapse" href="#abstract-{{forloop.index}}"  class="btn-abstract" style="text-decoration:none; color:#ebebeb; hover:#ebebeb; margin-top:5px;" role="button" aria-expanded="false" aria-controls="abstract-{{forloop.index}}">ABSTRACT</a> {% endif %}
+  {% if publi.bib %} <a data-bs-toggle="collapse" href="#bib-{{forloop.index}}"  class="btn-bib" style="text-decoration:none; color:#ebebeb; hover:#ebebeb; margin-top:5px;" role="button" aria-expanded="false" aria-controls="bib-{{forloop.index}}">BIB</a> {% endif %}
+  {% if publi.pdf %}<a href="{{ pdffile }}" target="_blank"><button class="btn-pdf" style="margin-top:5px;"
+  >PDF</button></a>{% endif %}
   {% if publi.doi %}<a href="http://doi.org/{{ publi.doi }}" target="_blank"><button class="btn-doi">DOI</button></a> {% endif %}
   {% if publi.arxiv %}<a href="https://arxiv.org/abs/{{ publi.arxiv }}" target="_blank"><button class="btn-arxiv">ARXIV</button></a> {% endif %}
   {% if publi.code %}<a href="{{ publi.code }}" target="_blank"><button class="btn-code">CODE</button></a> {% endif %}
